@@ -1,0 +1,19 @@
+import java.io.*;
+class WriteFile
+{
+public static void main(String[] args)
+{
+String str= &quot;Embark on the avenues of excellence with SRM University-AP!
+Believing in the power of education to transform lives, our interdisciplinary
+research-oriented undergraduate, postgraduate, and doctoral programmes
+ensure global exposure and entrepreneurial experience to our students. We
+are a thriving intellectual community prepared for a dynamic world.&quot;;
+try
+{
+FileWriter fw=new FileWriter(&quot;D:\\srm.txt&quot;,true);
+fw.write(str);
+fw.close();
+}
+catch(IOException e){}
+}
+}
